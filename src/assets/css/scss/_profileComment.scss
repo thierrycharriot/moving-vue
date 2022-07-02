@@ -1,0 +1,72 @@
+// Ce qui est ecris ici c'est pour le petit format (à comprendre téléphone) 
+// On va mettre ici aussi tout le reste (le css général)
+
+/* HAUT BAS DROIT GAUCHE */
+
+
+#img_profil {
+    width: 70px;
+    margin: 20px 20px 10px 0px;
+
+}
+
+
+
+.star {
+    height: 28px;
+}
+
+.all-comment-profil {
+    margin-top: 40px;
+    h2 {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+}
+
+.comment {
+    padding-bottom: 35px;
+}
+
+.contain-icon-name-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.profil-name-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 16px;
+    }
+}
+
+
+
+/* .rating a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+ } */
+
+// Ce qui est ecris ici c'est pour le grand format (à comprendre orfinateur)
+
+@media screen and (min-width: 768px) {  
+
+}

@@ -1,0 +1,42 @@
+.delivery-searchbar {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 6px 5px rgb(238, 238, 238);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    margin:0 0 1.5625rem 0;
+
+    .delivery {
+        position: relative;
+        padding-right: 1rem;
+        p {
+            font-weight: 500;
+        }
+        &::after {
+            position: absolute;
+            content: ' ';
+            right: 0;
+            width: 1px;
+            height: 90%;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $borderColor;
+           
+        }
+    }
+
+    .around {
+        padding-left: 1rem;
+        p {
+            font-weight: 500;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1127px) {
+
+}

@@ -1,0 +1,324 @@
+// .profile-page h2 {
+//     margin-top: 40px;
+// }
+
+.bg {
+    background-color: $secondaryLight;
+    height: 100%;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+//COMPONENTS ProfileUser
+.desc-profile-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-profile {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.img-profile-zone {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.img-profile-container {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.photo-icon {
+    position: absolute;
+    z-index: 1;
+    width: 18px;
+    right: 0;
+    top: 0;
+    transform: translate(3px, -3px);
+}
+
+.img-profile-user {
+    width: 100%;
+    height: auto;
+}
+
+.padding-text {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.icon-and-title {
+    display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    align-items: center
+}
+
+.icon-and-title>p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.7rem
+}
+
+// END Components ProfileUser
+
+//Components BadgeUser
+.text-badge {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 0.75rem;
+}
+
+//ENd Components BadgeUser
+
+//Components MyItinerary
+
+.title-itinerary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    // margin-top: 40px;
+    padding-bottom: 0;
+}
+
+.title-marg {
+    margin-top: 40px;
+    padding-bottom: 25px;
+}
+
+.text-italic-profile {
+    font-weight: 300;
+    font-style: italic;
+    color: #828282;
+    margin-bottom: 15px;
+}
+
+.pos-flex-icon {
+    display: flex;
+    align-items: flex-start;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+
+    img {
+        cursor: pointer;
+
+        &:first-of-type {
+            transform: translateY(1px);
+        }
+    }
+}
+
+.pos-itinerary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.pos-default-visible {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    span {
+        font-size: .7rem;
+        font-weight: 300;
+        font-style: italic;
+        color: #ed7e7e;
+        display: inline-block;
+        transform: translatey(-1px);
+    }
+}
+
+.pos-btn-itinerary {
+    margin-top: 20px;
+}
+
+
+.itinerary-form, .delivery-modal__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 90%;
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    label {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: .7rem;
+        color: $primaryDark;
+    }
+
+    input {
+        border: 1px solid $borderColor;
+        border-radius: 3px;
+        height: 2.5rem;
+        padding: 1rem;
+
+        &:focus {
+            border: 1px solid $secondary;
+            caret-color: $secondary;
+        }
+    }
+
+    .button {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+}
+
+//END Components MyItinerary
+
+//Components MyDelivery
+
+.style-card-delivery {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 305px;
+    height: 202px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.style-card-delivery>p {
+    position: absolute;
+    font-size: 1.25rem;
+    color: $secondaryLight;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: .5rem;
+}
+
+.img-delivery-profile {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+    -webkit-filter: brightness(.7);
+            filter: brightness(.7);
+}
+
+.rating a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+}
+
+.rating a:hover,
+.rating a:focus {
+    color: orange;
+    cursor: pointer;
+}
+
+@media screen and (min-width:760px) {
+    .style-card-deliveries {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    .itinerary-form {
+        width: 30%;
+    }
+
+    .img-profile-zone {
+        width: 124px;
+        height: 124px;
+
+        >img {
+            cursor: pointer;
+        }
+    }
+
+    .img-profile-container {
+        width: 124px;
+        height: 124px;
+    }
+
+    .photo-icon {
+        width: 26px;
+        transform: translate(0px, 0px);
+    }
+
+    .desc-profile-image {
+        display: block;
+        justify-content: unset;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .white-card {
+        background: white;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        padding: 30px;
+        width: 305px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photo-icon-desktop {
+        position: relative;
+        top: 40px;
+        left: 135px;
+        width: 32px;
+        cursor: pointer;
+    }
+
+    .picture-profile-desktop {
+        border-radius: 50%;
+        width: 160px;
+        margin-bottom: 20px;
+    }
+
+    .center-picture-desktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex {
+        display: flex;
+        -moz-column-gap: 10px;
+             column-gap: 10px
+    }
+    .flex img {
+        width: 28px;
+    }
+    .mt-20 {
+        margin-top: 40px;
+    }
+}

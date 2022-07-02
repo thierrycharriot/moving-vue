@@ -1,0 +1,143 @@
+.hide-class-close {
+  display: none
+}
+
+// Navigation version mobile
+
+.menu-mobile {
+  z-index: 30;
+  background: $primaryDark;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left:0
+}
+.open-mobile {
+  -webkit-animation: 0.3s linear open-mobile;
+          animation: 0.3s linear open-mobile;
+}
+
+@-webkit-keyframes open-mobile {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes open-mobile {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.close-mobile {
+  -webkit-animation: .3s ease forwards close-mobile;
+          animation: .3s ease forwards close-mobile;
+}
+
+@-webkit-keyframes close-mobile {  
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes close-mobile {  
+  100% {
+    transform: translateX(100%);
+  }
+}
+.height-90vh {
+  height: 90vh;
+}
+.center-nav, .ul-style, .pos-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pos-btn {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.ul-style, .pos-btn {
+  align-items: center;
+}
+.ul-style li {
+  color: $secondary;
+  font-size:1.3125rem;
+}
+// end Navigation mobile
+
+//Navigation desktop
+@media screen and (min-width: 760px) {
+  .menu-desktop {
+    background: $primaryDark;
+    height: 52vh;
+    top: 145px;
+    max-width: 300px;
+    position: fixed;
+    width: 90%;
+    z-index: 99;
+  }
+  .open-desktop {
+    -webkit-animation: .3s ease forwards open-desktop;
+            animation: .3s ease forwards open-desktop;
+  }
+  
+  @-webkit-keyframes open-desktop {
+    100% {
+      transform: translateX(-10%);
+    }
+  }
+  
+  @keyframes open-desktop {
+    100% {
+      transform: translateX(-10%);
+    }
+  }
+  
+  .close-desktop {
+    -webkit-animation: .3s ease forwards close-desktop;
+            animation: .3s ease forwards close-desktop;
+  }
+  
+  @-webkit-keyframes close-desktop {  
+    100% {
+      transform: translateX(110%);
+    }
+  }
+  
+  @keyframes close-desktop {  
+    100% {
+      transform: translateX(110%);
+    }
+  }
+  .height-90vh {
+    height: 54vh;
+  }
+  nav:not(.regular) {
+    margin-bottom: 20px;
+  }
+  .center-nav, .ul-style, .pos-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pos-btn {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    flex-wrap: wrap;
+  }
+  .pos-btn > a {
+    margin:5px
+  }
+  
+  .ul-style, .pos-btn {
+    align-items: center;
+  }
+  .ul-style li {
+    color: $secondary;
+    font-size:1.3125rem;
+    cursor:pointer
+  }
+}

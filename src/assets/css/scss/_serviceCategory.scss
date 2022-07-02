@@ -1,0 +1,53 @@
+// Ce qui est ecris ici c'est pour le petit format (à comprendre téléphone) 
+// On va mettre ici aussi tout le reste (le css général)
+
+/* HAUT BAS DROIT GAUCHE */
+
+.template-serviceofyourneeds {
+    background-color: $secondaryLight;
+}
+
+.service-category {
+    width: 90%;
+    margin:auto;
+    background-color: $secondaryLight;
+}
+
+#h2-serv-category {
+    color: $primaryDark;
+    padding: 50px 0px;
+}
+
+.all-group-links-serv-category {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.group-links-serv-category {
+    flex: 50%;
+
+    ul {
+        li{
+            a {
+                color: $primaryDark ;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+// Ce qui est ecris ici c'est pour le grand format (à comprendre orfinateur)
+
+@media screen and (min-width: 768px) {  
+    .all-group-links-serv-category {
+        width: 68%;
+        margin: auto;
+    }
+}

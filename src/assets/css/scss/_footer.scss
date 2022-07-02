@@ -1,0 +1,76 @@
+// Ce qui est ecris ici c'est pour le petit format (à comprendre téléphone) 
+// On va mettre ici aussi tout le reste (le css général)
+
+footer {
+    background-color: $primaryDark;
+}
+
+.footer-top {
+    width: 85%;
+    margin:auto;
+    padding: 50px 0;
+}
+
+.footer-bottom {
+    background-color: $secondaryLight;
+    text-align: center;
+    // Ici on met 35 px uniquement à droite et à gauche. 
+    padding: 35px 0;
+    font-size: 22px;
+
+    p {
+        font-family: 600;
+    }
+}
+
+#mov-footer-top {
+    color: $secondary;
+
+}
+
+.group-links-footer {
+    list-style: none;
+}
+
+.group-links-footer li a {
+    color: $secondaryLight;
+}
+
+
+// Ce qui est ecris ici c'est pour le grand format (à comprendre orfinateur)
+@media screen and (min-width: 768px) {
+
+    .footer-bottom {
+        height: 156px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        padding-top: 50px;
+
+    }
+
+    .group-links-footer {
+        margin: 80px;
+    }
+    
+    #mov-footer-top {
+        padding: 0px;
+    }
+
+    .footer-top {
+        padding: 0px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    
+
+}
+

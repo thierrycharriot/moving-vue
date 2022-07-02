@@ -1,0 +1,95 @@
+// Ce qui est ecris ici c'est pour le petit format (à comprendre téléphone) 
+// On va mettre ici aussi tout le reste (le css général)
+
+/* HAUT BAS DROIT GAUCHE */
+
+.all-service-of-your-needs {
+    background-color: $primaryLight;
+    padding-bottom: 50px;
+}
+
+.service-of-your-needs {
+    width: 85%;
+    margin:auto;
+}
+
+#h2-serv-of-your-need {
+    color: $primaryDark;
+    padding: 50px 0px;
+}
+
+.h3-serv-of-your-need {
+    color: white;
+    font-size: 23px;
+    padding-top: 306px;
+}
+
+.all-card-serv-of-your-needs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-serv-of-your-needs {
+    border-radius: 54px;
+    color: white;
+    font-size: 23px;
+    margin: 0;
+    padding: 0px 20px 20px 20px;
+    height: 480px;
+    background-size: cover;
+    padding-bottom: 50px;
+    width: 305px;
+    margin-bottom: 50px;
+
+
+    button {
+        border: none;
+        height: 49px;
+        width: 169px;
+        border-radius: 50px;
+        background-color: white;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            -webkit-filter: brightness(90%);
+                    filter: brightness(90%);
+        }
+    }
+
+}
+
+#card-serv-1 {
+    background-image: url(../images/services/concept.jpg);
+    //h3 { color: $primaryDark; }
+    a { color: $primaryDark; }
+}
+
+#card-serv-2 {
+    background-image: url(../images/services/presta.jpg);
+}
+
+#card-serv-3 {
+    background-image: url(../images/services/team.jpg);
+    background-position-x: 25%;
+}
+
+
+// Ce qui est ecris ici c'est pour le grand format (à comprendre orfinateur)
+
+@media screen and (min-width: 768px) {
+    .all-card-serv-of-your-needs {
+        justify-content: space-between;
+    }
+
+    .card-serv-of-your-needs {
+        margin: 0 2rem 50px 2rem;
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

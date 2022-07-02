@@ -1,0 +1,25 @@
+.mailbox__searchbar {
+    height: 5.125rem;
+    width: 100%;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+}
+
+.mailbox {
+    &__field {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__field input {
+        height: 1.5625rem;
+        padding: 5px 0 3px 0;
+        width: 245px;
+        text-indent: .3rem;
+        border-radius: 2px;
+    }
+}

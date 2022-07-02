@@ -1,0 +1,49 @@
+@import './delivery-results';
+@import './delivery_searchbar';
+@import './delivery_details';
+@import './delivery-modal';
+@import './search-results';
+
+.results-page {
+    background-color: $secondaryLight;
+    padding-bottom: 2rem;
+    position: relative;
+    min-height: calc(156vh - 5.125rem); 
+}
+
+.results-container {
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    top: calc(69vh);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1126px) {
+    .results-container {
+        position: unset;
+        transform: unset;
+        padding-top: 2rem;
+    }
+    .results-page {
+        min-height: calc(100vh - 5.125rem); 
+    }
+}
+
+@media screen and (min-width: 1127px) {
+    .results-container {
+        position: unset;
+        transform: unset;
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+     .results-page {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-bottom: 0;
+        min-height: calc(100vh - 5.125rem); 
+    }
+}

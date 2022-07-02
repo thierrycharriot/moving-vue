@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600&display=swap');
+$fontPoppins:'Poppins', sans-serif;
+
+// Variables custom colors
+
+//- Titres
+//- Textes courants
+//- Textes des boutons
+//- Fond du footer
+//- Fond du menu hamburger déroulé
+//- Fond des icônes sur fond clair
+//- Bordure des inputs
+$primaryDark: rgba(57, 64, 83, 1);
+
+//- Fond de la section "Au service de vos besoins" (page home)
+//- Fond des boutons
+$primaryLight: rgb(230, 204, 178);
+
+//- Marque (bordure gauche) de l'onglet actif dans la messagerie
+//- Titre du footer
+//- Fond de la searchbar zone de la messagerie
+$secondary: rgba(221, 184, 146, 1);
+
+//- Fond de la navbar
+$secondaryLighter: rgba(221, 184, 146, .7);
+
+//- Background
+//- Textes sur fond sombre
+$secondaryLight: rgba(255, 252, 242, 1);
+
+//- Fond d'un onglet actif dans la messagerie
+//- Fond d'un message sur deux dans la messagerie
+$messageActiveBg: rgba(255, 248, 225, 1);
+
+//- Bordures dans la messagerie
+//- Fond de l'icône de flèche de retour en arrière
+$borderColor: rgba(57, 64, 83, .4);
+
+//- Intitulés de la sidebar de droite dans la messagerie
+$spanColor: rgba(57, 64, 83, .9);
+
+//Fond du formulaire de recherche/login/register
+$inputBgColor: rgba(255, 255, 255, .9);
+
+//placeholder
+$placeholderColor: #BDBDBD;

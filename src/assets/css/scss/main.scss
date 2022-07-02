@@ -1,0 +1,98 @@
+
+@charset "utf-8";
+@import '_variables.scss';
+@import '_header.scss';
+@import '_regular-navbar.scss';
+@import '_footer.scss';
+@import '_navigation.scss';
+@import '_serviceOfYourNeeds.scss';
+@import '_serviceCategory.scss';
+@import '_doNotMiss.scss';
+@import '_serviceHonor.scss';
+@import '_form.scss';
+@import 'deliveries/index.scss';
+@import '_profil.scss';
+@import 'mailbox/index.scss';
+@import 'animations/slide.scss';
+@import '_profileComment.scss';
+@import '_404Page.scss';
+@import 'team/team.scss';
+
+@media screen and (max-width: 768px) {
+    .toastify {
+        max-width: calc(98% - 20px) !important;
+    }
+}
+
+:root {
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontPoppins;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    background-color: rgba(255, 252, 242, 1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    padding-bottom: 50px;
+    font-weight: 600;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+p, li, a {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: $secondaryLight;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.button {
+    background: $primaryLight;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 38px 12px 38px;
+    margin-top: 0;
+    font-size: 16px;
+    cursor: pointer;
+
+    &.thin {
+        padding: 6px 38px;
+    }
+}
+
+.ps {
+    height: calc(100vh - 21rem);
+}
+
+.block-scroll {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+.pointer {
+    cursor: pointer;
+}

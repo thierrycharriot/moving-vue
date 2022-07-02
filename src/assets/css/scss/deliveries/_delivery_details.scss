@@ -1,0 +1,175 @@
+.result-details {
+    &__header {
+        position: relative;
+        height: 240px;
+        transform: translateX(-1px);
+
+        > img {
+            margin: 1rem 0 0 1rem;
+        }
+
+        .header__illustration {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            width: 100%;
+
+            img {
+                width: calc(100% + 1px);
+                max-height: 375px;
+            }
+        }
+    }
+
+    &__content {
+        width: 90%;
+        margin: 1.5rem auto;
+        padding-bottom: 10rem;
+
+        .content__header {
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: rgb(235, 235, 235);
+                content: ' ';
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+            }
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+
+        .header__meta {
+            .first-line > *, .second-line > * {
+                display: flex;
+                p {
+                    font-weight: 300;
+                    color: $borderColor;
+                    font-size: .75rem;
+                    margin-left: 0.2rem;
+                }
+            }
+            .first-line {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 0.2rem;
+                > * {
+                    margin-right: 1.5rem;
+                }
+            }
+            .second-line {
+                transform: translateX(2px);
+            }
+        }
+
+        .content__description {
+            h4 {
+                font-size: .875rem;
+                font-weight: 700;
+            }
+
+            div {
+                margin-top: 0.2rem;
+                font-size: .875rem;
+            }
+        }
+    }
+
+    .recap {
+        &__default-showing {
+            display: flex;
+        }
+        align-items: center;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border-top: 1px solid rgb(235, 235, 235);
+        transition: .3s;
+
+        .content__header {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            &::after {
+                display: none;
+            }
+
+        }
+
+        h3 {
+            font-size: .75rem;
+        }
+
+        button {
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            width: 157px;
+        }
+
+        &__contact-box {
+            position: absolute;
+            bottom: 2rem;
+            width: 90%;
+            margin: auto;
+            textarea {
+                border-radius: 3px;
+                width: 100%;
+                border: 1px solid $borderColor;
+                font-family: $fontPoppins;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            .button {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .result-details .ps{
+        display: flex;
+        .result-details__header {
+            width: 60%;
+
+            .header__illustration {
+                height: 100%;
+                img {
+                    max-height: initial;
+                    height: calc(100vh - 5.125rem);
+                }
+            }
+        }
+
+        .result-details__content {
+            width: 35%;
+            margin: 2rem auto 0 auto;
+        }
+
+        .recap {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: initial;
+            width: 40%;
+        }
+    }
+}

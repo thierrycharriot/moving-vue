@@ -1,0 +1,48 @@
+fieldset {
+    position: relative;
+}
+
+.search-results {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    background-color: #fff;
+    opacity: .9;
+    border-radius: 3px;
+    h4 {
+        text-align: center;
+        padding: .7rem 0 .5rem 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .8rem;
+        position: relative;
+        &::after {
+            position: absolute;
+            height: 1px;
+            width: 90%;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            content: ' ';
+            background-color: $borderColor;
+        }
+
+        span {
+            font-size: .7rem;
+            font-weight: 300;
+            font-style: italic;
+            color: #ed7e7e;
+        }
+    }
+    &__item {
+        padding: 1rem;
+        margin-bottom: 0;
+        cursor: pointer;
+        &:hover {
+            background-color: $secondaryLight;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.delivery-modal {
+    position: absolute;
+    left: 0;
+    min-height: calc(100vh - 5.125rem);
+    width: 100%;
+    z-index: 1;
+    background-color: $secondaryLight;
+    padding: 1rem;
+
+    .ps {
+        height: calc(100vh - 5.125rem);
+    }
+}

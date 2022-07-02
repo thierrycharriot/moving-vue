@@ -1,0 +1,126 @@
+// Ce qui est ecris ici c'est pour le petit format (à comprendre téléphone) 
+// On va mettre ici aussi tout le reste (le css général)
+
+/* HAUT BAS DROIT GAUCHE */
+
+.template-service-honor{
+    background-color: $secondaryLight;
+}
+
+.all-service-honor {
+    width: 85%;
+    margin: auto;
+
+    /* Ici on cible le dernier élement div de .all-do-not-miss */
+    div:last-of-type {
+        margin-bottom: 0px;
+    }
+
+}
+
+.content-service-honor {
+    background-color: $secondary;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: calc(100% + 1px);
+    z-index: 1;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+    padding: 29px 0;
+}
+
+.all-card-service-honor {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-service-honor {
+    border-radius: 47px;
+    position: relative;
+    padding: 24px 34px 20px 20px;
+    height: 515px;
+    width: 305px;
+    margin-bottom: 50px;
+    background-size: cover;
+
+        &:first-of-type {
+            background-image: url(../images/sample/guitar.jpg);
+            background-position-x: 50%;
+        }
+
+        &:nth-of-type(2) {
+            background-image: url(../images/sample/dog.jpg);
+            background-position-x: 50%;
+        }
+
+        &:nth-of-type(3) {
+            background-image: url(../images/example-details-desktop.jpg);
+            background-position-x: 50%;
+        }
+
+        h3 {
+            color: $primaryDark;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        /* Ici on cible l'enfant p (numéros 1)*/
+        p:nth-of-type(1) {
+            color: $primaryDark;
+            margin-bottom: 0.2rem;
+        }
+
+        p {
+            color: $secondaryLight;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        img {
+            height: 69%;
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            // HAUT GAUCHE - HAUT DROIT - BAS DROIT - BAS GAUCHE
+            border-radius: 47px 47px 0px 0px;
+        }
+
+}
+
+#h2-service-honor {
+
+    color: $primaryDark;
+    padding: 50px 0px;
+
+}
+
+
+
+
+// Ce qui est ecris ici c'est pour le grand format (à comprendre orfinateur)
+
+@media screen and (min-width: 768px) {  
+    .all-card-service-honor {
+        justify-content: space-between;
+    }
+
+    .card-service-honor {
+        margin: 0 2rem 50px 2rem;
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+}
